@@ -1,0 +1,11 @@
+{
+  "name": "leedsnightowlscouk",
+  "main": "src/index.js",
+  "compatibility_date": "2025-12-28",
+  "assets": {
+    "directory": "./assets"
+  },
+  "observability": {
+    "enabled": true
+  },
+}

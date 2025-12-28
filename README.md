@@ -1,2 +1,2 @@
 # leedsnightowlscouk
-Sources for leedsnightowls.co.uk website
+Sources for old leedsnightowls.co.uk website. Just redirects over to the club website.
