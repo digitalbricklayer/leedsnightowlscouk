@@ -6,10 +6,10 @@ export default {
     const requestURL = new URL(request.url);
     const path = requestURL.pathname;
 
-    // Strip the leading www. from the beginning of the URL
-    if (path.startsWith("https:\/\/www.")) {
+    // Redirect to canonical domain
+    if (requestURL.hostname.startsWith("www.")) {
       // Redirect to new site without the leading www. sub-domain
-      const requestUrlWoutSubdomain = request.url.replace("https:\/\/www.", "https://");
+      const requestUrlWoutSubdomain = request.url.replace("https://www.", "https://");
       return Response.redirect(requestUrlWoutSubdomain, 301);
     }
     
